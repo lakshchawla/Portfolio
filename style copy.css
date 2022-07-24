@@ -1,0 +1,490 @@
+@import 'https://fonts.googleapis.com/css?family=Lily+Script+One';
+@import url('https://fonts.googleapis.com/css2?family=Kotta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400&display=swap');
+
+/*
+2872 × 1632 pixels
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Heebo', sans-serif;
+}
+
+html{
+  padding: 0;
+  margin: 0;box-sizing: border-box;
+  width: fit-content;
+}
+
+.Body {
+  margin: 0 auto;
+  width: 90%;
+  background-color: #141a31;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+.navbar a{
+  color: rgb(255, 255, 255);
+}
+
+.navbar a:hover{
+  color: #5033ff;
+}
+
+.navbar-brand{
+  font-weight: bolder;
+}
+
+.nav-item{
+  width: max-content;
+  margin-bottom: auto;
+}
+
+.navbar{
+  height: 50px;
+}
+
+.frontPage{
+  min-height: calc(100vh - 50px);
+  height: max-content;
+  width: 100%;
+}
+
+.introText {
+  color: white;
+  position: relative;
+  top: 20vh;
+  height: fit-content;
+}
+
+.introText h2{
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.introText h2 span{
+  position: relative;
+  bottom: 12px;
+
+}
+
+.introText h1{
+  font-size: calc(3.375rem + 3.5vw) !important;
+  font-weight: bolder;
+  margin-bottom: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: italic;
+}
+
+.introText h1 span{
+  color: #5033ff;
+  position: relative;
+  top: 10px;
+}
+
+.whitePage{
+  width: 100vw;
+  background-color: white;
+  margin: 0;
+  position: absolute;
+  left: 0;
+}
+
+.photoFrame1{
+  height: 340px;
+  width: 260px;
+  background-color: #efefef;
+  transform: rotate(-10deg);
+  position: relative;
+  left: -10px;
+  top: -30vh;
+}
+
+.photoFrame2{
+  height: 340px;
+  width: 260px;
+  background-color: #ffc947;
+  transform: rotate(20deg);
+  margin: 0;
+  padding: 0;
+}
+
+.mainPhoto{
+  width: 250px;
+  height: 300px;
+  background-image: url(./Screenshot\ 2022-06-28\ at\ 10.34.42\ PM.png);
+  transform: rotate(-10deg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  top: 20px;
+}
+
+.photoMain{
+  width: fit-content;
+  margin-left: auto;margin-right: auto;
+}
+
+.Page{
+  min-height: 100vh;
+  padding: 5vh 0;
+  height: fit-content;
+}
+
+.fancyText{
+
+}
+
+.fancyText span{
+  font-weight: bolder;
+  color: #5033ff;
+  font-size: 80px;
+  text-shadow: 2px 2px 1px #765eff;
+}
+
+.fancyText .Qnt{
+  position: relative;
+  bottom: 13px;
+  font-size: 30px;
+}
+
+.fancyText .And{
+  margin: 0 9px;
+  position: relative;
+  bottom: 17px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.Button{
+  padding: 15px 35px;
+  color: white;
+  border-radius: 7px;
+  background-color: #765eff;
+}
+
+.Button:hover{
+  background-color: #5639fc;
+  transition: 0.5s;
+  color: white;
+}
+
+
+
+.Services .card{
+  height: 400px;
+  color: black;
+  background-color: #efefef;
+  perspective: 500px;
+  background-color: transparent;
+  border: 0;
+}
+
+.Services .card:hover{
+  position: relative;
+  z-index: 200;
+  transition: 0.5s;
+}
+
+.Page .Services{
+  position:relative;
+  bottom: 0;
+  margin-top: 10vh;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.Services .card:hover .content {
+  transform: rotateX( 180deg ) ;
+  transition: transform 0.5s;
+}
+
+.front,
+.back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  text-align: center;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+.back {
+  background: #03446A;
+  color: white;
+  transform: rotateX( 180deg );
+}
+.Services .card .front .card-title{
+  color: #5033ff;
+  font-weight: bold;
+  font-size: calc(1.375rem + 1.5vw);
+  height: min-content;
+  position: absolute;
+  bottom: 0;
+  line-height: normal;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.Services .card .cardNo{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.front .Svg{
+  margin-top: 50px;
+}
+
+.back{
+  padding: 15px;
+}
+
+.back div{
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.Services{
+  width: 100%;
+  position: relative;
+  top: 8vh;
+}
+
+
+
+.bottomCaption{
+  margin-top: 120px;
+  margin-left: auto;
+  width: fit-content;
+}
+
+.bottomCaption a{
+  color: #7561eb;
+}
+
+.bottomCaption a:hover{
+  color: #583bff;
+  transition: 0.5s;
+}
+
+
+.carousel-item{
+}
+
+p a{
+  color: #c0b5ff;
+}
+
+p a:hover{
+  color: hwb(249 32% 0%);
+  transition: 0.6s;
+}
+
+.Testimonials{
+  position: relative;
+  bottom: 40px;
+}
+
+.Testimonials .col-md-4{
+  margin-top: 70px;
+}
+
+.TestimImg img{
+  height: 130px;
+  width: 130px;
+}
+
+.TestimImg{
+  position: absolute;
+  top: -50px;
+  width: 100%;
+  text-align: center;
+  width: calc(100% - 20px);
+
+}
+
+.Testimonial{
+  height: 100%;
+  padding: 10px;
+  margin-top: 70px;
+}
+
+.Testimonial .card-body{
+  margin-top: 70px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.Testimonial .CiteName{
+  position: absolute;
+  text-align: center;
+  width: calc(100% - 20px);
+  bottom: 0;
+  font-weight: bold;
+  color: #5033ff;
+}
+
+.Track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 7s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.indianFlag{
+  position: relative;
+  top: 7px;
+}
+
+
+.CardSvg img{
+  height: 150px;
+}
+
+a .card{
+  color: #5033ff;
+}
+
+.Work .card:hover .cardImg{
+  height: 250px;
+  transition: ease-in-out;
+  transition-duration: 300ms;
+}
+
+.Work .card:hover h1{
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .photoFrame1{
+    position: relative;
+    top: 70px;
+  }
+  .introText{
+    position: initial;
+  }
+  .introText h1{
+    font-size: 60px;
+  }
+  .Page .Services{
+    margin: 0;
+  }
+}
+
+.nBody .navbar a{
+  color: rgb(0, 0, 0);
+}
+
+.nBody .navbar a:hover{
+  color: #5033ff;
+}
+
+.freelancingLaptop{
+  width: 100%;
+}
+
+.uiDesign img{
+  border-radius: 10px;
+}
+
+.contactPage .card{
+  background-color: #282f4a;
+  padding: 30px;
+}
+
+.contactCards .card{
+  background-color: #282f4a;
+  height: 250px;
+  color: white;
+}
+
+.CardSvg svg{
+  height: 100px;
+}
+
+.contactCards .card .cardImg{
+  height: 100px;
+}
+
+.contactCards .card .card-text{
+  margin-top: 30px;
+}
+
+
+.CardSvg svg{
+  width: 80px;
+  color: white;
+}
+
+.contactCards a .card:hover,
+.contactCards a .card:hover .CardSvg svg{
+  background-color:#7561eb;
+  transition-duration: 400ms;
+}
+
+.myBigFont {
+  font-size: calc(3.375rem + 3.5vw) !important;
+  width: fit-content;
+}
+
+
+
+.myBigFont:hover,
+.myBigFont:hover a{
+  margin-left: 80px;
+  transition-duration: 500ms;
+  color: #5639fc;
+}
+
+.Work{
+  position: relative;
+  top: 10vh;
+}
+
+.workLinks{
+  position: relative;
+  top: 10vh;
+}
+
+.workLinks a{
+  color: #5033ff;
+}
+
+.workLinks a:hover{
+  padding-bottom: 10px;
+  transition-duration: 400ms;
+}
+
+.mainTitle{
+  padding-top: 80px;
+  font-size: calc(1.8rem + 1.5vw);
+}
+
